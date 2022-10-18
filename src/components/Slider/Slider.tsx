@@ -1,27 +1,20 @@
-// import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import OnboardingDescription, {
   Image_Location_Position,
 } from '../OnboardingDescription/OnboardingDescription';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-export default () => {
+const Silder = () => {
   return (
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
-      //간격
       slidesPerView={1}
-      //보여질 컨텐츠 수
       navigation
-      // 화살표 유무
     >
       <SwiperSlide>
         <OnboardingDescription
@@ -63,3 +56,5 @@ export default () => {
     </Swiper>
   );
 };
+
+export default Silder;

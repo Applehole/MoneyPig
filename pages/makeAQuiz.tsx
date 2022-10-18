@@ -268,11 +268,18 @@ const MakeAQuiz: NextPage = () => {
           </div>
         </div>
         <div className=" text-center translate-y-6 ">
-          <Button
+          <button
+            onClick={openQuizModal}
+            className="hover:bg-blue-dark text-white font-bold py-2 px-4 rounded bg-primary w-20 h-12 md:mt-0 mt-6 drop-shadow-lg"
+            type="button"
+          >
+            확인
+          </button>
+          {/* <Button
             onClick={openQuizModal}
             children="확인"
             style="w-20 h-12 md:mt-0 mt-6 drop-shadow-lg"
-          />
+          ></Button> */}
         </div>
       </Modal>
       <Head>
@@ -334,7 +341,14 @@ const MakeAQuiz: NextPage = () => {
           </div>
           <div>
             <div className="text-5xl text-center m-2 ">문제</div>
-            <Button children="문제유형선택" onClick={openQuizModal} />
+            <button
+              onClick={openQuizModal}
+              className="hover:bg-blue-dark text-white font-bold py-2 px-4 rounded bg-primary"
+              type="button"
+            >
+              문제유형선택
+            </button>
+            {/* <Button children="문제유형선택" onClick={openQuizModal}></Button> */}
           </div>
         </div>
         <div className=" text-center m-10">
@@ -395,11 +409,18 @@ const MakeAQuiz: NextPage = () => {
           </div>
         </div>
         <div className=" text-center h-32">
-          <Button
+          <button
+            onClick={onSubmit}
+            className="hover:bg-blue-dark text-white font-bold py-2 px-4 rounded bg-primary translate-y-16"
+            type="button"
+          >
+            문제완성
+          </button>
+          {/* <Button
             style=" translate-y-16"
             children="문제 완성"
             onClick={onSubmit}
-          />
+          ></Button> */}
         </div>
       </div>
 
